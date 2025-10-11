@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+div {
+    border: 1px;
+    margin:10xp;
+    padding:20xp;
+}
+
+html,body {
+    font-family: "Montserrat", sans-serif;
+    background-color: antiquewhite;
+}
+
+ul.menu { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.menu > li.home { 
+    position: relative;
+}
+.menu > li.home > a { 
+    display: inline-block; 
+    padding: 10px 80px;
+    font-weight: 700; 
+    color: rgba(0,0,0,.55); 
+    text-decoration: none;
+    background-color: rgba(235,136,185,.3);
+}
+
+.menu .dropdown { 
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: rgba(235,136,185,.4); 
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
+    min-width: 150px; 
+    z-index: 1000; 
+    border-radius: 4px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,.15); 
+}
+.menu .dropdown li a { 
+    display: block; 
+    padding: 8px 16px; 
+    color: rgba(0,0,0,.55); 
+    text-decoration: none; 
+    font-weight: 700; 
+}
+.menu .dropdown li a:hover { 
+    background-color: #555; 
+    color: #fff; 
+}
+.menu > li.home:hover .dropdown { 
+    display: block;
+}
+.ylapalkki { 
+    background-color: antiquewhite; 
+    margin-top: 5px; 
+    height: 30px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 12px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+
+}
+.ylapalkki img { 
+    height: 100px; 
+    width: auto; 
+    display: block; }
+
+.ylapalkki a { 
+    display: inline-block; 
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02) ), url("https://images.pexels.com/photos/256632/pexels-photo-256632.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700; 
+    color:rgba(46, 45, 45, 0.733);
+    padding: 200px 10px 0px 10px;
+}
+
+header p {
+    font-size: 18px;
+    text-align: center; 
+    font-weight: 500; 
+    color:rgba(46, 45, 45, 0.733);
+    padding: 5px 10px 10px 100px;
+}
+
+.valiotsikot {
+    width: 90%;
+    margin: auto;
+}
+
+.valiotsikot h2 {
+    font-size: 36px;
+    text-align: center; 
+    color:darkgrey;
+    padding: 5px 10px 0px 10px;
+}
+
+.valiotsikot p {
+    font-size: 14px;
+    text-align: center;
+    color:darkgrey;
+}
+
+.teksti p {
+    font-size: 14px;
+    text-align: center; 
+    color:darkgrey;
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+
+.kuvat {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.palsta {
+    flex: 1 1 45%;
+    max-width: 300px;
+}
+
+.palsta img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+.meista {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.007) ), url("https://img.freepik.com/free-photo/abstract-blur-defocused-restaurant-coffee-shop-cafe-interior_1203-9267.jpg");    background-position: center;
+    background-size: cover;
+}
+
+.meista h1 {
+    font-size: 48px;
+    text-align:center;
+    font-weight: 800; 
+    color:rgba(235, 197, 27, 0.925);
+    padding: 50px 10px 150px 90px;
+    text-shadow: 2px 2px 2px rgba(27, 27, 27, 0.932);
+}
+
+.sisalto { 
+    max-width: 800px;
+    margin: 0 auto; 
+} 
+    
+.teksti_kuva { 
+    text-align: center; 
+} 
+
+.teksti_kuva img { 
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.tuotteet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.10)), url("https://images.pexels.com/photos/5427261/pexels-photo-5427261.jpeg");    background-position: center;
+    background-size: cover;
+}
+
+.tuotteet h1 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700; 
+    color:rgba(235, 169, 202, 0.925);
+    padding: 200px 10px 10px 10px;
+    text-shadow: 2px 2px 2px rgba(27, 27, 27, 0.932);
+}
+
+
+footer {
+    background-color:beige;
+    margin-top: 20px;
+}
+
+footer p {
+    color:rgba(199, 112, 6, 0.973);
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .palsta {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .valiotsikot { 
+        width: 75%;
+    } 
+    .palsta { 
+        flex-basis: 50%;
+    } 
+    .kuvat:after { 
+        content: ""; 
+        display: table; 
+        clear: both; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .valiotsikot { 
+        width: 45%; 
+    } 
+    .palsta { 
+        flex-basis: 45%;
+    }
+}
